@@ -1,0 +1,114 @@
+:root{
+    --banner-height: 10vh;
+    --profile-width: 40%;
+    --main-background-color: linear-gradient(to bottom, #00cc00, #66ff66);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    background-image: var(--main-background-color);
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--banner-height);
+    background-color: white;
+    text-align: center;
+    font: calc(var(--banner-height)*.75) Arial bold;
+    border-bottom: 3px solid black;
+    overflow: hidden;
+}
+.banner-image{
+    height: var(--banner-height);
+    width: var(--banner-height);
+    background-image: url("ericgram_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .5%;
+}
+
+
+
+/* Main container */
+.main-container{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 100%;
+    margin: 1% 0;
+    /* background-color: gold; */
+}
+
+.embedded-app{
+    height: 725px;
+    /* width: 30%; */
+    width: 100%;
+    border: none;
+}
+
+/* Displayed Profile */
+
+.display-profile{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1%;
+}
+
+.user-image{
+    width: 20rem;
+    height: 20rem;;
+    margin-top: 10%;
+}
+.user-name, .user-date, .user-caption, .user-favorite{
+    margin: 2% 0%;
+    font-size: larger;
+}
+/* User Search */
+.find-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-user-id{
+    height: 5%;
+    width: 80%;
+    margin-top: 20%;
+    border: 2px solid black;
+}
+
+.btn-find-user{
+    height: 8%;
+    width: 50%;
+    border-radius: 16px;
+    font: 2em arial bold;
+    border: 2px solid black;
+    margin-top: 5%;
+}
+.search-error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5%;
+    width: 60%;
+    height: 40%;
+}
+.hardcode-ids{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    padding: .5% 1%;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+.hardcode-ids h4,.hardcode-ids p{
+    margin: 0;
+}
